@@ -1,5 +1,5 @@
 <?php
-namespace Rakeshmagento\Logcleaner\Cron;
+namespace Lof\Logcleaner\Cron;
 
 use \Psr\Log\LoggerInterface;
 
@@ -35,7 +35,7 @@ class Logcleaner {
 
             $tableName  = $resource->getTableName($value);
             $sql        = "TRUNCATE ".$tableName;
-            
+
             try{
                 $connection->query($sql);
                 $this->logger->info($tableName.' cleaned up.');

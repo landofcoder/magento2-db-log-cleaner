@@ -1,0 +1,26 @@
+{
+    "name": "landofcoder/module-logcleaner",
+    "description": "Magento 2 DB Log Cleaner Extension for magento2",
+    "require": {
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "keywords": [
+        "landofcoder",
+        "magento 2 db log cleaner",
+        "clean customer_visitor",
+        "clean report_event",
+        "clean report_viewed_product_index",
+        "clean report_compared_product_index"
+    ],
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+        "Lof\\Logcleaner\\": ""
+        }
+    }
+}
